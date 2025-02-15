@@ -36,3 +36,13 @@ console.log(compareNumbers(5,2))
 console.log(compareNumbers(10,20))
 console.log(compareNumbers(-1,3))
 console.log("----------------------------------------")
+
+console.log("3. arrow functions and arrays")
+const numArray = [1, 2, 3, 4, 5]
+
+console.log("filter() to filter numbers greater than 2.")
+console.log(numArray.filter((value) => {return value < 2}))
+
+console.log("map() with an arrow function to multiply each number by 2.")
+console.log(numArray.map((value) => {return value * 2}))
+console.log("----------------------------------------")
