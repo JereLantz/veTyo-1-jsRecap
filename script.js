@@ -48,3 +48,30 @@ console.log("map() with an arrow function to multiply each number by 2.")
 //console.log(numArray.map((value) => {return value * 2}))
 console.log(numArray.map((value) => value * 2))
 console.log("----------------------------------------")
+
+console.log("4. Objects and Classes")
+class Car{
+    /**
+     * @param {string} make 
+     * @param {string} model 
+     * @param {number} year 
+     */
+    constructor(make, model, year){
+        this.make = make
+        this.model = model
+        this.year = year
+    }
+    getCarInfo(){
+        return `${this.make} ${this.model} ${this.year}`
+    }
+}
+
+const car = new Car("auto", "neli-pyöräinen", 1969)
+const car1 = new Car("ford", "mondeo", 1999)
+const car2 = new Car("mazda", "auto", 2015)
+const car3 = new Car("toyota", "joku", 2024)
+console.log(car.getCarInfo())
+console.log(car1.getCarInfo())
+console.log(car2.getCarInfo())
+console.log(car3.getCarInfo())
+console.log("----------------------------------------")
