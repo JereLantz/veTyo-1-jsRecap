@@ -41,8 +41,10 @@ console.log("3. arrow functions and arrays")
 const numArray = [1, 2, 3, 4, 5]
 
 console.log("filter() to filter numbers greater than 2.")
-console.log(numArray.filter((value) => {return value < 2}))
+//console.log(numArray.filter((value) => {return value < 2}))
+console.log(numArray.filter((value) => value < 2))
 
 console.log("map() with an arrow function to multiply each number by 2.")
-console.log(numArray.map((value) => {return value * 2}))
+//console.log(numArray.map((value) => {return value * 2}))
+console.log(numArray.map((value) => value * 2))
 console.log("----------------------------------------")
