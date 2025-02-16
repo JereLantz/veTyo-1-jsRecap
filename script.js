@@ -75,3 +75,31 @@ console.log(car1.getCarInfo())
 console.log(car2.getCarInfo())
 console.log(car3.getCarInfo())
 console.log("----------------------------------------")
+
+console.log("5. Spread Operator and Destructuring")
+const user = {
+    Name:"Jaska Jokunen",
+    email:"jokunen@hotmail.com",
+    address:{
+        country:"Finland",
+        city:"Vaasa",
+        street:"Jokukuja 69"
+    }
+}
+
+const {Name, email, address} = user
+console.log("Original object")
+console.log(user)
+
+console.log("Destructured data")
+console.log(Name)
+console.log(email)
+console.log(address)
+
+console.log("spread operation to user")
+const spreadUser = {
+    ...user,
+    email:"toinen@hotmail.com"
+}
+console.log(spreadUser)
+console.log("----------------------------------------")
