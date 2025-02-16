@@ -103,3 +103,12 @@ const spreadUser = {
 }
 console.log(spreadUser)
 console.log("----------------------------------------")
+
+// 6. Manipulating the DOM
+document.getElementById("button")?.addEventListener("click", ()=>{
+    const data = /** @type {HTMLInputElement}*/(document.getElementById("textInput"))?.value
+    const display = document.getElementById("display")
+    if (display != null){
+        display.innerText = data
+    }
+})
